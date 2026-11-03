@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -g -Iinclude 
+CFLAGS = -g -Wall -Iinclude 
 malloc_trace = ./malloc_trace
 malloc_dbg_so = /usr/lib64/libc_malloc_debug.so.0
 exec=my_allocator

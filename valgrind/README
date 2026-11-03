@@ -1,0 +1,15 @@
+Callgrind
+---------
+Source: https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/lab7/
+
+`objdump -d ./trials` prints the disassembly to stdout.
+
+Running
+
+`valgrind --tool=callgrind ./trials`
+
+creates a `callgrind.out.<pid>` file that you can run the following command on:
+
+`valgrind-annotate --auto=yes callgrind.out.<pid>` 
+
+This shows instruction counts of the different implementations for powers of 2. The greater the instruction count, the more time it's assumed to take. 
